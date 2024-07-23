@@ -28,6 +28,7 @@ const initialSalesData = [
   { time: '2024-06-01', value: 700 },
 ];
 
+
 // Función de mapeo para transformar los datos de la API
 const mapProductData = (product) => {
   return {
