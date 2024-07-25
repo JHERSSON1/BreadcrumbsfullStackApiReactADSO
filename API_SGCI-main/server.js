@@ -29,3 +29,15 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Usar rutas de autenticación
 app.use('/api/auth', authRoutes);
+
+// Rutas de productos
+app.use('/api', productosRoutes); // Usar rutas de productos
+
+// Rutas de pedidos
+app.use('/api', pedidosRoutes);  // Usar rutas de pedidos
+
+// Configurar el puerto en el que escuchará el servidor
+const PORT = 5000;
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
+}); 
